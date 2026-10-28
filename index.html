@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Samari, with love</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;
+font-family:Georgia,serif;color:#573448;text-align:center;
+background:linear-gradient(145deg,#fff4e8,#f7dce8 55%,#e6ddf7)}
+.card{width:min(100%,540px);padding:40px 26px;border:1px solid #fff;
+border-radius:28px;background:#ffffffc9;box-shadow:0 18px 60px #70435b25}
+.heart{font-size:28px;color:#c2607e}
+small{letter-spacing:3px;color:#a56d7e}
+h1{font-size:clamp(2.5rem,10vw,4rem);font-weight:normal;color:#9d4568;margin:20px 0}
+p{font-size:1.08rem;line-height:1.8}
+button{border:0;border-radius:30px;padding:13px 20px;margin:10px;
+background:#9d4568;color:white;font:inherit;cursor:pointer}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="heart">♥</div>
+  <small>OCTOBER 28 · OUR ANNIVERSARY</small>
+  <h1>My Samari</h1>
+  <p>Across every mile, my heart still finds its way home to you.</p>
+
+  <button onclick="document.getElementById('letter').classList.toggle('hidden')">
+    Open your love letter
+  </button>
+
+  <section id="letter" class="hidden">
+    <p>My love,</p>
+    <p>If I could fold the distance like a letter, I’d cross it just to see your smile. Until then, let these words find you where my arms cannot.</p>
+    <p>You are the softest thought in my busiest day, the light I carry into every tomorrow. Loving you makes every mile feel smaller.</p>
+    <p>Today, I’m grateful for your laugh, your tenderness, and every little moment that is ours. I wish I could hold your hand and tell you:</p>
+    <p><strong>I love you, Samari — across every mile, in every quiet moment, and in all the days still waiting for us.</strong></p>
+
+    <button onclick="document.getElementById('secret').classList.toggle('hidden')">
+      One last little secret
+    </button>
+    <p id="secret" class="hidden"><em>If I had to choose again, my heart would still choose you. ♥</em></p>
+  </section>
+</main>
+</body>
+</html>
